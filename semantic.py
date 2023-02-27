@@ -9,13 +9,13 @@ nlp = spacy.load('en_core_web_sm')
 model_sentence = nlp(sentence_to_compare)
 for sentence in sentences:
     similarity = nlp(sentence).similarity(model_sentence)
-print("sm model " + sentence + " - ", similarity)
+    print("sm model " + sentence + " - ", similarity)
 
 
 nlp = spacy.load('en_core_web_md')
 model_sentence = nlp(sentence_to_compare)
 for sentence in sentences:
     similarity = nlp(sentence).similarity(model_sentence)
-print("md model " +sentence + " - ", similarity)
+    print("md model " +sentence + " - ", similarity)
 
 quit()
